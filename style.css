@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+/*  color variable */
+:root {
+    --dark-blue: hsl(233, 47%, 7%); /*main background*/
+    --desaturated-blue: hsl(244, 38%, 16%); /*card background*/
+    --soft-violet: hsl(277, 64%, 61%);  /*accent*/
+
+    --white: hsl(0, 0%, 100%);    /*main heading, stats*/
+    --transparent-white: hsla(0, 0%, 100%, 0.75);   /* main para*/
+    --slightly-white: hsla(0, 0%, 100%, 0.6);   /* stat headings*/
+}
+/* lang variable*/
+:root {
+    --Inter: 'Inter', sans-serif;
+    --Lexend-Deca: 'Lexend Deca', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--dark-blue);
+    font-size: 15px;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1440px;
+    width: 1212px;
+    height: 500px;
+    background-color: var(--desaturated-blue);
+    border-radius: 10px;
+}
+.text-content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-box {
+    width: 65%;
+    height: 80%;
+}
+.box {
+    height: 133px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+.box-1 {
+    font-family: var(--Inter);
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--white);
+}
+.box-1 span{
+    color: var(--soft-violet);
+}
+.box-2 {
+    font-family: var(--Inter);
+    color: var(--slightly-white);
+    letter-spacing: 0.5px;
+    line-height: 2;
+}
+.box-3 {
+    width: 94%;
+}
+.box-3 h4 {
+    color: var(--white);
+    font-family: var(--Inter);
+    font-size: 1.7rem;
+    line-height: 2;
+}
+.box-3 p {
+    font-family: var(--Lexend-Deca);
+    color: var(--slightly-white);
+    font-size: 0.9rem;
+    letter-spacing: 0.7px;
+}
+
+.img-content {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    /* background-image: url(./images/image-header-desktop.jpg);
+    border-radius: 0px 10px 10px 0px;
+    background-size: cover;
+    object-fit: cover; */
+}
+.img-content img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+}
+.img-content::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: hsla(277, 64%, 61%, 0.592);
+    border-radius: 0px 10px 10px 0px;
+}
+.footer {
+    padding: 10px;
+}
+.attribution { 
+    font-size: 13px;
+    text-align: center;
+    color: var(--white);
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    list-style: none;
+}
