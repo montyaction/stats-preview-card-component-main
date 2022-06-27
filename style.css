@@ -75,7 +75,7 @@ body {
 .box-3 {
     width: 94%;
 }
-.box-3 h4 {
+.box-3 h2 {
     color: var(--white);
     font-family: var(--Inter);
     font-size: 1.7rem;
@@ -121,7 +121,7 @@ body {
 
 @media screen and (max-width: 376px) {
 
-    .container {
+    .main {
         display: flex;
         flex-direction: column;
         /* justify-content: center; */
@@ -159,7 +159,7 @@ body {
         gap: 15px;
         margin: 10px 0 22px 0
     }
-    .box-3 h4 {
+    .box-3 h2 {
         font-size: 1.5rem;
     }
     .box-3 p {
